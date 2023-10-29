@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/padrao.css">
+        <link rel="icon" href="css/imgs/logo.png">
+
+        <title>OP</title>
+    </head>
+    <body class="bg-gradient">
+        <!--Navbar padrão da pagina-->
+        <div id="nav"></div> 
+        <br>
+        <br>
+        <!--cartão-->
+        <div  class="container mt-5 bg-gradient">
+            <div class="card container bg-light " style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Contato</h5>
+                  <br>
+                  <p class="card-text">Número:(47) 99652-3244</p>
+                  <a href="https://wa.me/5547996523244" style="text-decoration: none;" target="_blank" class="text-dark card-text">WhatsApp</a>
+                  <br>
+                  <a href="https://www.linkedin.com/in/osvaldo-protazio" style="text-decoration: none;" target="_blank" class="text-dark card-text">Linkedin</a>
+                  <br>
+                  <a  href="mailto:osvaldo1408.exe@gmail.com" style="text-decoration: none;" target="_blank" class="text-dark card-text">Email</a>
+                  <br>
+                </div>
+              </div>
+        </div>
+         
+        
+            
+
+        
+
+        <footer class=" text-dark fixed-bottom">
+            <div class="container">
+                <p class="text-center">© 2023 Osvaldo Protazio.</p>
+                
+                </ul>
+            </div>
+        </footer>
+            
+    </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script> 
+        fetch('/nav/nav.html')
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById('nav').innerHTML = html;
+        });
+
+        
+    </script>
+</html>

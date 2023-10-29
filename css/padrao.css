@@ -1,0 +1,13 @@
+@font-face {
+    font-family: NugoSansLight;
+    src: url(/css/NugoSansLight-9YzoK.ttf);
+}
+body{
+    font-family: NugoSansLight;
+    
+}
+#logo{
+    margin-left: 10px;
+}
+
+

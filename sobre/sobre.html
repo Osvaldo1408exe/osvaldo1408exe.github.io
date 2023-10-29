@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/padrao.css">
+        <link rel="icon" href="css/imgs/logo.png">
+        <title>OP</title>
+    </head>
+    <body class="bg-gradient">
+        <!--Navbar padrão da pagina-->
+        <div id="nav"></div> 
+        <br>
+        <br>
+
+        
+        
+        <!--cartão apresentação-->
+        <div id="sobre"  class="container mt-2 ">
+            <div class="container" style="width: 40rem;">
+
+                  <h5 class=" text-center ">Sobre</h5>
+                  <h6 class="text-subtitle text-muted  mb-2 ">Osvaldo Protazio</h6>
+                  <p class="text">Estou no terceiro semestre de ADS, fiz este site para expor projetos pessoais que faço quando não estou fazendo projetos paralelos</p>
+                  <br>
+                  <h5 class="text-title text-center">Tecnologias</h5>
+                  <h6 class="text-subtitle text-muted mb-2">Tecnologias que uso em meus projetos</h6>
+                  <ul class="list-group">
+                    <li class="list-group-item-action list-group-flush">Html/CSS</li>
+                    <li class="list-group-item-action list-group-flush">Javascript</li>
+                    <li class="list-group-item-action list-group-flush">PHP</li>
+                    <li class="list-group-item-action list-group-flush">Bootstrap</li>
+                    <li class="list-group-item-action list-group-flush">Liguagem M</li>
+                    <li class="list-group-item-action list-group-flush">PostgreSQL</li>
+                  </ul>
+                </div>
+              </div>
+        </div>
+        
+        
+        
+            
+
+        
+
+        <footer class=" text-dark fixed-bottom">
+            <div class="container">
+                <p class="text-center">© 2023 Osvaldo Protazio.</p>
+                
+                </ul>
+            </div>
+        </footer>
+            
+    </body>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!--nav-->
+    <script> 
+        fetch('/nav/nav.html')
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById('nav').innerHTML = html;
+        });
+    </script>
+</html>

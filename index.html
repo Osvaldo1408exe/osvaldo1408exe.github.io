@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="/css/index.css">
+        <link rel="stylesheet" href="./css/padrao.css">
+        <link rel="icon" href="css/imgs/logo.png">
+
+        <title>OP</title>
+    </head>
+    <body>
+        <!--Navbar padrão da pagina-->
+        <div id="nav"></div>
+
+        <div class="header">
+
+        <div class="inner-header flex">
+            
+        <h1>Projetos e Trabalhos <br> Osvaldo Protazio</h1>
+        </div>
+            
+         <!--Container Ondas-->
+        <div>
+        <svg class="waves" 
+        viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18v44h-352z" />
+        </defs>
+        <g class="parallax">
+        <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+        <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+        <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+        <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+        </g>
+        </svg>
+        </div>
+
+
+        
+    <footer class=" text-dark fixed-bottom">
+        <div class="container">
+            <p class="text-center">© 2023 Osvaldo Protazio.</p>
+            <ul class="list-inline text-center">
+                <li class="list-inline-item"><a href="mailto:osvaldo1408.exe@gmail.com" target="_blank" class="text-dark">Email</a></li>
+                <li class="list-inline-item"><a href="https://www.linkedin.com/in/osvaldo-protazio" target="_blank" class="text-dark">Linkedin</a></li>
+                <!-- Outros links ou informações de contato -->
+            </ul>
+        </div>
+    </footer>
+
+            
+    </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script> 
+        fetch('nav/nav.html')
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById('nav').innerHTML = html;
+        });
+
+        
+    </script>
+</html>
